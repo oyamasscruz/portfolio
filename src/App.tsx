@@ -1,5 +1,17 @@
+import Header from './containers/Header/index'
+import Home from './containers/Hero'
+import Projetos from './containers/Projetos'
+import EstiloGlobal from './styles'
+
 function App() {
-  return <h1>olá</h1>
+  return (
+    <>
+      <EstiloGlobal />
+      <Header />
+      <Home />
+      <Projetos />
+    </>
+  )
 }
 
 export default App
