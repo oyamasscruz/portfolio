@@ -1,3 +1,4 @@
+import Habilidades from './containers/Habilidades'
 import Header from './containers/Header/index'
 import Home from './containers/Hero'
 import Projetos from './containers/Projetos'
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Home />
       <Projetos />
+      <Habilidades />
     </>
   )
 }

@@ -1,39 +1,49 @@
 import styled from 'styled-components'
+import { Container, H2, H3 } from '../../styles'
 import variaveis from '../../styles/variaveis'
+import { BotaoContato } from '../Hero/syles'
 
 export const Projeto = styled.section`
-  height: 100vh;
   background-color: ${variaveis.azulSecundario};
-  display: flex;
-  flex-direction: column;
   padding: 80px 0;
 `
 
-export const Titulo = styled.h2`
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2.2rem;
+export const ContainerProjetos = styled(Container)`
+  display: flex;
+  flex-direction: column;
+`
+
+export const Titulo = styled(H2)`
   text-align: center;
   margin-bottom: 2rem;
 `
 
 export const ListaCard = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 24px;
-  padding: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `
 export const Card = styled.div`
   padding: 30px;
-  background-color: ${variaveis.azulBackgroundColor};
-  height: 100%;
+  background-color: ${variaveis.corDoCard};
+  display: flex;
+  flex-direction: column;
   border-radius: 8px;
   border-left: 4px solid ${variaveis.enfaseSecundario};
+  @media (max-width: 768px) {
+    display: block;
+  }
 `
 
-export const TituloCard = styled.h3`
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 15px;
+export const TituloCard = styled(H3)`
+  margin-bottom: 20px;
 `
 
 export const TextoCard = styled.p`
@@ -41,4 +51,43 @@ export const TextoCard = styled.p`
   color: ${variaveis.textoSecundario};
   margin-bottom: 20px;
   line-height: 1.6;
+  font-size: 18px;
+  flex-grow: 1;
+`
+
+export const AreaDeBotoes = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  @media (max-width: 768px) {
+    display: block;
+    text-align: center;
+  }
+`
+
+export const Botoes = styled.button`
+  padding: 6px 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-2px);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 16px;
+  }
+  @media (max-width: 480px) {
+    margin-right: 16px;
+  }
+`
+
+export const BotaoTodosProjetos = styled(BotaoContato)`
+  padding: 6px 12px;
+  text-align: center;
+  margin-top: 40px;
 `

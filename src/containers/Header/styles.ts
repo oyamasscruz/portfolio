@@ -1,16 +1,20 @@
 import styled from 'styled-components'
 import variaveis from '../../styles/variaveis'
+import { Container } from '../../styles'
 
-export const Menu = styled.nav`
+export const Menu = styled.header`
+  width: 100%;
+  background-color: rgba(18, 18, 18, 0.9);
+  position: fixed;
+  padding: 20px 0;
+`
+
+export const ContainerHeader = styled(Container)`
+  backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
-  padding: 1rem 5rem;
-  align-items: center;
-  position: fixed;
-  background-color: rgba(18, 18, 18, 0.9);
-  backdrop-filter: blur(10px);
-  width: 100%;
 `
+
 export const Titulo = styled.h1`
   color: ${variaveis.enfasePrimario};
   font-family: 'Montserrat', sans-serif;
