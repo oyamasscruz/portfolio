@@ -2,6 +2,10 @@ import styled from 'styled-components'
 import variaveis from '../../styles/variaveis'
 import { Container } from '../../styles'
 
+type LinkProps = {
+  ativo?: boolean
+}
+
 export const Menu = styled.header`
   width: 100%;
   background-color: rgba(18, 18, 18, 0.9);
@@ -34,7 +38,11 @@ export const Links = styled.li`
   font-weight: bold;
 `
 
-export const Linksa = styled.a`
+export const Linksa = styled.a<LinkProps>`
+  text-decoration: none;
+  color: ${({ ativo }) => (ativo ? '#64ffda' : '#ffff')};
+  border-bottom: ${({ ativo }) => (ativo ? '2px solid #64ffda' : 'none')};
+
   &:hover {
     border-bottom: 2px solid ${variaveis.enfasePrimario};
     color: ${variaveis.enfasePrimario};

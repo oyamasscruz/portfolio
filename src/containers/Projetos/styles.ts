@@ -11,6 +11,13 @@ export const Projeto = styled.section`
 export const ContainerProjetos = styled(Container)`
   display: flex;
   flex-direction: column;
+  height: 70vh;
+  @media (max-width: 1280px) {
+    height: 80vh;
+  }
+  @media (max-width: 1024px) {
+    height: auto;
+  }
 `
 
 export const Titulo = styled(H2)`
@@ -23,10 +30,10 @@ export const ListaCard = styled.div`
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1300px) {
     grid-template-columns: repeat(2, 1fr);
   }
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     grid-template-columns: 1fr;
   }
 `
@@ -61,7 +68,6 @@ export const AreaDeBotoes = styled.div`
   justify-content: space-between;
   margin-top: auto;
   @media (max-width: 768px) {
-    display: block;
     text-align: center;
   }
 `

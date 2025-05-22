@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import variaveis from '../../styles/variaveis'
-import { Container, H2, H3 } from '../../styles'
+import { Container, H2 } from '../../styles'
 
 export const HomePage = styled.section`
   padding: 80px 0;
@@ -10,6 +10,14 @@ export const ContainerHero = styled(Container)`
   display: flex;
   justify-content: space-between;
   height: 70vh;
+  @media (max-width: 1280px) {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+  }
+  @media (max-width: 1024px) {
+    height: auto;
+  }
 `
 
 export const Imagem = styled.div`
@@ -25,6 +33,14 @@ export const Imagem = styled.div`
   &:hover {
     animation: pulsar 1.8s ease-in-out;
   }
+  @media (max-width: 1280px) {
+    padding: 0 3rem;
+    width: 200px;
+    height: 200px;
+  }
+    @media (max-width: 1024px) {
+    margin-top: 40px;
+  }
 
   @keyframes pulsar {
     50% {
@@ -38,6 +54,9 @@ export const Imagem = styled.div`
     width: 300px;
     height: 300px;
     border-radius: 50%;
+    @media (max-width: 1280px) {
+    width: 180px;
+    height: 180px;
   }
 `
 export const Titulo = styled.h1`
@@ -61,6 +80,7 @@ export const TextoHero = styled.p`
   margin-bottom: 1rem;
 `
 export const BotaoProjetos = styled.button`
+  text-decoration: none;
   padding: 12px 24px;
   margin-right: 16px;
   background-color: ${variaveis.enfasePrimario};
@@ -70,7 +90,6 @@ export const BotaoProjetos = styled.button`
   border-radius: 8px;
   border: none;
   cursor: pointer;
-
   &:hover {
     transform: translateY(-3px);
     transition: ease-in-out 0.4s;

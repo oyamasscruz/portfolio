@@ -11,10 +11,15 @@ export const ContainerHabilidades = styled(Container)`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 70vh;
 `
 
 export const Titulo = styled(H2)`
   margin-bottom: 2rem;
+
+  @media (max-width: 430px) {
+    text-align: center;
+  }
 `
 
 export const DContainer = styled.div`

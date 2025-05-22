@@ -7,23 +7,35 @@ import {
   ContainerHeader
 } from './styles'
 
-const Header = () => {
+type HeaderProps = {
+  sectionAtiva: string
+}
+
+const Header = ({ sectionAtiva }: HeaderProps) => {
   return (
     <Menu>
       <ContainerHeader>
         <Titulo>Meu Portifólio</Titulo>
         <ListaDeLinks>
           <Links>
-            <Linksa>Home</Linksa>
+            <Linksa href="#hero" ativo={sectionAtiva === 'hero'}>
+              Home
+            </Linksa>
           </Links>
           <Links>
-            <Linksa>Projetos</Linksa>
+            <Linksa href="#projetos" ativo={sectionAtiva === 'projetos'}>
+              Projetos
+            </Linksa>
           </Links>
           <Links>
-            <Linksa>Habilidades</Linksa>
+            <Linksa href="#habilidades" ativo={sectionAtiva === 'habilidades'}>
+              Habilidades
+            </Linksa>
           </Links>
           <Links>
-            <Linksa>Contato</Linksa>
+            <Linksa href="#contato" ativo={sectionAtiva === 'contato'}>
+              Contato
+            </Linksa>
           </Links>
         </ListaDeLinks>
       </ContainerHeader>
