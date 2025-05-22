@@ -23,7 +23,7 @@ const Header = ({ sectionAtiva }: HeaderProps) => {
   return (
     <Menu>
       <ContainerHeader>
-        <Titulo>Meu Portifólio</Titulo>
+        <Titulo>Meu Portfólio</Titulo>
         <ToggleButton onClick={toggleButton}>
           <div></div>
           <div></div>

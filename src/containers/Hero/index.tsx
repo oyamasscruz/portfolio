@@ -21,7 +21,7 @@ const Home = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
             </SubTitulo>
             <TextoHero>
               Criando experiências digitais modernas e funcionais. Esse
-              portifólio é um projeto para apresentar um pouco das minhas
+              portfólio é um projeto para apresentar um pouco das minhas
               habilidades de forma mais personalizada possível.
             </TextoHero>
             <a href="#projetos">
