@@ -8,7 +8,7 @@ export const FormaDeContato = styled.section`
 `
 export const ContainerContato = styled(Container)`
   text-align: center;
-  height: 70vh;
+  height: 80vh;
 
   @media (max-width: 1280px) {
     height: 80vh;

@@ -11,7 +11,7 @@ export const Projeto = styled.section`
 export const ContainerProjetos = styled(Container)`
   display: flex;
   flex-direction: column;
-  height: 70vh;
+  height: 80vh;
   @media (max-width: 1280px) {
     height: 80vh;
   }
