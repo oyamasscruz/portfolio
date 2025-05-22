@@ -40,8 +40,8 @@ export const ToggleButton = styled.button`
   display: none;
   background-color: transparent;
   cursor: pointer;
-  height: 25px;
-  border-radius: 4px;
+  height: 30px;
+  border: none;
 
   @media (max-width: 680px) {
     display: block;
