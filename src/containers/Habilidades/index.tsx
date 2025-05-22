@@ -5,11 +5,15 @@ import {
   SkillBar,
   SkillItem,
   SkillItems,
-  SkillLevel,
   SkillName,
   SubTitulo,
   Titulo,
-  DContainer
+  DContainer,
+  SkillLevelHTML,
+  SkillLevelCSS,
+  SkillLevelJS,
+  SkillLevelTS,
+  SkillLevelRCT
 } from './styles'
 
 const Habilidades = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
@@ -24,45 +28,45 @@ const Habilidades = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
               <SkillItem>
                 <SkillName>
                   <i className="fa-brands fa-html5"></i>
-                  HTML
+                  HTML - 90%
                   <SkillBar>
-                    <SkillLevel></SkillLevel>
+                    <SkillLevelHTML></SkillLevelHTML>
                   </SkillBar>
                 </SkillName>
               </SkillItem>
               <SkillItem>
                 <SkillName>
                   <i className="fa-brands fa-css3-alt"></i>
-                  CSS
+                  CSS - 80%
                   <SkillBar>
-                    <SkillLevel></SkillLevel>
+                    <SkillLevelCSS></SkillLevelCSS>
                   </SkillBar>
                 </SkillName>
               </SkillItem>
               <SkillItem>
                 <SkillName>
                   <i className="fa-brands fa-js"></i>
-                  JavaScript
+                  JavaScript - 70%
                   <SkillBar>
-                    <SkillLevel></SkillLevel>
+                    <SkillLevelJS></SkillLevelJS>
                   </SkillBar>
                 </SkillName>
               </SkillItem>
               <SkillItem>
                 <SkillName>
                   <i className="fa-brands fa-js"></i>
-                  TypeScript
+                  TypeScript - 60%
                   <SkillBar>
-                    <SkillLevel></SkillLevel>
+                    <SkillLevelTS></SkillLevelTS>
                   </SkillBar>
                 </SkillName>
               </SkillItem>
               <SkillItem>
                 <SkillName>
                   <i className="fa-brands fa-react"></i>
-                  React
+                  React - 50%
                   <SkillBar>
-                    <SkillLevel></SkillLevel>
+                    <SkillLevelRCT></SkillLevelRCT>
                   </SkillBar>
                 </SkillName>
               </SkillItem>

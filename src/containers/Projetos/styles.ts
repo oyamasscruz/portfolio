@@ -44,9 +44,24 @@ export const Card = styled.div`
   flex-direction: column;
   border-radius: 8px;
   border-left: 4px solid ${variaveis.enfaseSecundario};
+
+  &:hover img {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
   @media (max-width: 768px) {
     display: block;
   }
+`
+export const Imagem = styled.img`
+  opacity: 0;
+  width: 95%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transform: translateY(20px);
+  transition: all 0.4s ease-in-out;
 `
 
 export const TituloCard = styled(H3)`

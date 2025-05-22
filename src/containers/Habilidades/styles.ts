@@ -57,8 +57,22 @@ export const SkillBar = styled.div`
   over-flow: hidden;
 `
 
-export const SkillLevel = styled.div`
+export const SkillLevelHTML = styled.div`
   height: 100%;
   background-color: ${variaveis.enfasePrimario};
+  width: 90%;
+`
+export const SkillLevelCSS = styled(SkillLevelHTML)`
+  width: 80%;
+`
+
+export const SkillLevelJS = styled(SkillLevelHTML)`
   width: 70%;
+`
+
+export const SkillLevelTS = styled(SkillLevelHTML)`
+  width: 60%;
+`
+export const SkillLevelRCT = styled(SkillLevelHTML)`
+  width: 50%;
 `

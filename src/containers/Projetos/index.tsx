@@ -9,8 +9,13 @@ import {
   AreaDeBotoes,
   Botoes,
   BotaoTodosProjetos,
-  ContainerProjetos
+  ContainerProjetos,
+  Imagem
 } from './styles'
+
+import favoriteMovies from '../../assets/Captura de Tela 2025-05-21 às 11.00.39.png'
+import cloneDisney from '../../assets/Captura de Tela 2025-05-21 às 10.43.04.png'
+import theGodFather from '../../assets/Captura de Tela 2025-05-21 às 10.43.48.png'
 
 const Projetos = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
   (props, ref) => {
@@ -20,40 +25,85 @@ const Projetos = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
           <Titulo>Projetos em Destaque</Titulo>
           <ListaCard>
             <Card>
-              <TituloCard>Interative Github</TituloCard>
+              <Imagem src={favoriteMovies}></Imagem>
+              <TituloCard>Filmes Favoritos</TituloCard>
               <TextoCard>
-                Projeto desenvolvido para poder demonstar o meu gitHub de forma
-                diferente
+                Projeto desenvolvido para poder aplicar um pouco do meu
+                conhecimento em JavaScript. Espero que goste, adicione e delete
+                os seus filmes favoritos.
               </TextoCard>
               <AreaDeBotoes>
-                <Botoes>Visitar página</Botoes>
-                <Botoes>Visitar GitHub</Botoes>
+                <a
+                  href="https://favorites-movies.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Botoes>Visitar página</Botoes>
+                </a>
+                <a
+                  href="https://github.com/oyamasscruz/favorites_Movies"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Botoes>Visitar GitHub</Botoes>
+                </a>
               </AreaDeBotoes>
             </Card>
             <Card>
-              <TituloCard>Interative Github</TituloCard>
+              <Imagem src={cloneDisney}></Imagem>
+              <TituloCard>Clone do Disney+</TituloCard>
               <TextoCard>
-                Projeto desenvolvido para poder demonstar o meu gitHub de forma
-                diferente
+                Conhecimento aplicado, para demonstrar um pouco do conhecimento.
               </TextoCard>
               <AreaDeBotoes>
-                <Botoes>Visitar página</Botoes>
-                <Botoes>Visitar GitHub</Botoes>
+                <a
+                  href="https://clone-disneyplus-weld-beta.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Botoes>Visitar página</Botoes>
+                </a>
+                <a
+                  href="https://github.com/oyamasscruz/clone_disneyplus/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Botoes>Visitar GitHub</Botoes>
+                </a>
               </AreaDeBotoes>
             </Card>
             <Card>
-              <TituloCard>Interative Github</TituloCard>
+              <Imagem src={theGodFather}></Imagem>
+              <TituloCard>O Poderoso Chefão</TituloCard>
               <TextoCard>
-                Projeto desenvolvido para poder demonstar o meu gitHub de forma
-                diferente
+                Projeto desenvolvido aplicar diversas áreas de conhecimento,
+                tentando trabalhar um pouco da minha criatividade também
               </TextoCard>
               <AreaDeBotoes>
-                <Botoes>Visitar página</Botoes>
-                <Botoes>Visitar GitHub</Botoes>
+                <a
+                  href="https://the-godfather-eight.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Botoes>Visitar página</Botoes>
+                </a>
+                <a
+                  href="https://github.com/oyamasscruz/the_godfather"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Botoes>Visitar GitHub</Botoes>
+                </a>
               </AreaDeBotoes>
             </Card>
           </ListaCard>
-          <BotaoTodosProjetos>Ver todos os Projetos</BotaoTodosProjetos>
+          <a
+            href="https://github.com/oyamasscruz"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BotaoTodosProjetos>Ver todos os Projetos</BotaoTodosProjetos>
+          </a>
         </ContainerProjetos>
       </Projeto>
     )
