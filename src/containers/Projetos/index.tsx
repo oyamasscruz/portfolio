@@ -13,9 +13,9 @@ import {
   Imagem
 } from './styles'
 
-import favoriteMovies from '../../assets/Captura de Tela 2025-05-21 às 11.00.39.png'
-import cloneDisney from '../../assets/Captura de Tela 2025-05-21 às 10.43.04.png'
-import theGodFather from '../../assets/Captura de Tela 2025-05-21 às 10.43.48.png'
+import favoriteMovies from '../../assets/favorites-movies.png'
+import cloneDisney from '../../assets/clone-disney.png'
+import theGodFather from '../../assets/the-god-father.png'
 
 const Projetos = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
   (props, ref) => {
